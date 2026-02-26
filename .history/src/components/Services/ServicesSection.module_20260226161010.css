@@ -1,0 +1,152 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* =========================
+   TOP DARK SECTION
+========================= */
+
+.topSection {
+  background-color: #072c44;
+  padding: 80px 8%;
+  color: white;
+}
+
+.header {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+}
+
+.accent {
+  display: inline-block;
+  width: 6px;
+  height: 40px;
+  background-color: #00c2ff;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.header p {
+  margin-top: 20px;
+  color: #c4d6e2;
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Dark Cards */
+
+.darkCard {
+  background-color: #0d3a57;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.darkCard:hover {
+  transform: translateY(-6px);
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.cardContent h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.cardContent p {
+  color: #b0c6d6;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.learnMore {
+  color: #00c2ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* =========================
+   BOTTOM LIGHT SECTION
+========================= */
+
+.bottomSection {
+  background-color: #f4f4f4;
+  padding: 80px 8%;
+}
+
+.lightCard {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.lightCard:hover {
+  transform: translateY(-6px);
+}
+
+.lightContent {
+  padding: 30px;
+}
+
+.lightContent h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #072c44;
+}
+
+.lightContent p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   IMAGE STYLING
+========================= */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.cardImage {
+  object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h2 {
+    font-size: 30px;
+  }
+}

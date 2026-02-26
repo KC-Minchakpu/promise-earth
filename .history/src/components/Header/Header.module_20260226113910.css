@@ -1,0 +1,186 @@
+.header {
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= TOP BAR ================= */
+.topBar {
+  background: linear-gradient(to right, #0f2b3a, #0c1f2a);
+  color: #ffffff;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.topContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topLeft span {
+  margin-right: 25px;
+}
+
+.topRight a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: #0d2533;
+  color: white;
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logoIcon {
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+/* NAV LINKS */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.navLinks a:hover {
+  color: #ff6600;
+}
+
+.active {
+  color: #ff6600;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropBtn:hover {
+  color: #ff6600;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  color: black;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.dropdownMenu a {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdownMenu a:hover {
+  background: #f3f3f3;
+  color: #ff6600;
+}
+
+/* CTA BUTTON */
+.cta a {
+  background: #ff6600;
+  padding: 12px 22px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cta a:hover {
+  background: #e65c00;
+}
+
+/* MOBILE */
+.mobileToggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .navLinks {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #0d2533;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+  }
+
+  .navLinks.show {
+    display: flex;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .dropdownMenu {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    background: #112f40;
+  }
+
+  .dropdownMenu a {
+    color: white;
+  }
+}
