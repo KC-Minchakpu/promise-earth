@@ -1,0 +1,113 @@
+.footer {
+  background: #031f35;
+  color: #cfe8f3;
+  padding-top: 60px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  border-top: 3px solid #888888;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 60px;
+  padding: 0 40px 50px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.logoIcon {
+  font-size: 34px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.subBrand {
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.desc {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: #a9c7d6;
+}
+
+.socials {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+.social {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  background: #0a3a52;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  color: #a9c7d6;
+}
+
+.colNewsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsText {
+  color: #a9c7d6;
+  margin-bottom: 18px;
+}
+
+.input {
+  background: #0a3a52;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  color: #cfe8f3;
+  margin-bottom: 14px;
+}
+
+.button {
+  background: #f7a600;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  color: #a9c7d6;
+  font-size: 14px;
+}

@@ -1,0 +1,56 @@
+.section {
+  background-color: #031f35; 
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaBox {
+  background-color: #f4a024; 
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.ctaBox h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #072b3a;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #072b3a;
+  color: #ffffff;
+  padding: 16px 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #051f2b;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ctaBox {
+    padding: 60px 20px;
+  }
+
+  .ctaBox h2 {
+    font-size: 28px;
+  }
+
+  .button {
+    padding: 14px 28px;
+  }
+}

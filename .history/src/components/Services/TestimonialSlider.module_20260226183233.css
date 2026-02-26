@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+  background: #062b3d;
+  padding: 60px 80px;
+  overflow: hidden;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide takes full width */
+.slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2x1 layout */
+  gap: 40px;
+}
+
+/* Position classes */
+.pos0 { transform: translateX(0%); }
+.pos1 { transform: translateX(-100%); }
+.pos2 { transform: translateX(-200%); }
+.pos3 { transform: translateX(-300%); }
+
+.card {
+  padding: 40px;
+  background: #0a3a52;
+  color: #cfe8f3;
+  border-radius: 6px;
+}
+
+.quoteMark {
+  font-size: 40px;
+  color: #1fb6d9;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 16px;
+  line-height: 1.6;
+  color: #a9c7d6;
+}
+
+.date {
+  display: block;
+  margin-top: 20px;
+  color: #f7b500;
+  font-weight: 600;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  color: #cfe8f3;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrowLeft { left: 20px; }
+.arrowRight { right: 20px; }
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  color: #1fb6d9;
+}
