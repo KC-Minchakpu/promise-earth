@@ -1,0 +1,57 @@
+import Image from "next/image";
+import styles from "./AboutSection.module.css";
+
+const AboutSection = () => {
+  return (
+    <section className={styles.section}>
+      <div className={styles.container}>
+        
+        {/* Left Image */}
+        <div className={styles.imageWrapper}>
+          <div className={styles.imageFrame}>
+            <Image
+              src="/images/about.jpg"
+              alt="Construction Gears"
+              fill
+              className={styles.image}
+            />
+          </div>
+        </div>
+
+        {/* Right Content */}
+        <div className={styles.content}>
+          <h2 className={styles.heading}>
+            <span className={styles.accent}></span>
+            About Promise Earth<span className={styles.dot}>.</span>
+          </h2>
+
+          <h2 className={styles.lead}>
+            Building the Future, Responsibly
+          </h2>
+
+          <p>
+            At Promise Earth, we are a leading mining and quarrying company committed to supplying the 
+            essential materials that fuel infrastructure development and economic growth. We extract 
+            and process a variety of minerals and aggregates, ensuring a steady supply for construction, 
+            manufacturing, and other vital industries.
+          </p>
+
+          <p>
+            Our company has a rich history in the mining and quarrying industry, 
+            dating back to the early 2000s. Over the years, we have established a reputation for excellence, 
+            built on a foundation of:
+          </p>
+
+          <ul className={styles.list}>
+            <li>Commitment to quality</li>
+            <li>Environmental responsibility</li>
+            <li>Safety focus</li>
+            <li>Community Focus</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
