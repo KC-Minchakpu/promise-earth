@@ -131,7 +131,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottomBar}>
-        <span>Design and Developed by: <Link href="https://www.linkedin.com/in/kevin-cross-minchakpu-7897379a/" className={styles.author}>Kevin Cross Minchakpu</Link></span> 
+        <span>Design and Developed by: </span> <a href="http://">Kevin Cross Minchakpu</a>
         <span>&copy; 2026. Promise Earth. All rights Reserved</span>
       </div>
     </footer>

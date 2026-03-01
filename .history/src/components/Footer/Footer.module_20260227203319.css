@@ -121,9 +121,5 @@
 .author {
   color:#9b9996;
   font-family: "Play", sans-serif;
- }
-
- .author :hover {
-    color: #f7a600;
-    text-decoration: underline;
- }
+  
+}

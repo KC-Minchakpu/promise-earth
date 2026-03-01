@@ -27,13 +27,13 @@
   max-width: 720px;
   padding: 0 4rem;
   color: #ffffff;
+  font-family: "Play" sans-serif;
 }
 
 .label {
   display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  font-family: "Play" sans-serif;
   margin-bottom: 1rem;
   position: relative;
   padding-left: 1rem;
