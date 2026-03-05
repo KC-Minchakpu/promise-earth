@@ -12,9 +12,9 @@ interface ProjectItem {
 const projects: ProjectItem[] = [
   {
     id: "1",
-    title: "Mining",
+    title: "Mining and Quarrying",
     image: "/images/services-1.jpeg",
-    slug: "mining",
+    slug: "mining-quarrying",
   },
   {
     id: "2",
@@ -36,15 +36,15 @@ const projects: ProjectItem[] = [
   },
   {
     id: "5",
-    title: "Quarrying",
+    title: "Glass Tower Project",
     image: "/images/services-2.jpg",
-    slug: "quarrying",
+    slug: "glass-tower",
   },
   {
     id: "6",
-    title: "Mining Site Planning & Construction",
+    title: "Industrial Construction",
     image: "/images/services-3.jpg",
-    slug: "mining-site-planning-construction",
+    slug: "industrial-construction",
   },
 ];
 

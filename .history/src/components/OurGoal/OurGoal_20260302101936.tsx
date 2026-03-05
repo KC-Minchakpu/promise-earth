@@ -42,9 +42,9 @@ const projects: ProjectItem[] = [
   },
   {
     id: "6",
-    title: "Mining Site Planning & Construction",
+    title: "Industrial Construction",
     image: "/images/services-3.jpg",
-    slug: "mining-site-planning-construction",
+    slug: "industrial-construction",
   },
 ];
 

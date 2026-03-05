@@ -51,7 +51,7 @@ const Header = () => {
 
   const isActive = (path: string) => pathname === path;
   const isAboutActive = ["/AboutUs", "/Emmanuel", "/OurTeam"].includes(pathname);
-  const isServicesActive = ["/Services","/Mining", "/Quarry", "/Construction", "/Excavation", "/Sandstones"].includes(pathname);
+  const isServicesActive = ["/mining", "/quarry", "/construction", "/excavation", "/sandstones"].includes(pathname);
 
   // Toggle for Mobile clicks
   const handleToggleAbout = (e: React.MouseEvent) => {
@@ -132,18 +132,18 @@ const Header = () => {
               }}
             >
               <Link 
-                href="/Services" 
+                href="/mining" 
                 onClick={handleToggleServices}
                 className={`${styles.dropBtn} ${isServicesActive ? styles.active : ""}`}
               >
                 Services <ChevronDown size={16} />
               </Link>
               <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.showDropdown : ""}`}>
-                <Link href="/Mining" className={isActive("/Mining") ? styles.active : ""}>Mining</Link>
-                <Link href="/Quarry" className={isActive("/Quarry") ? styles.active : ""}>Quarry</Link>
-                <Link href="/Construction" className={isActive("/Construction") ? styles.active : ""}>Construction</Link>
-                <Link href="/Excavation" className={isActive("/Excavation") ? styles.active : ""}>Excavation</Link>
-                <Link href="/Sandstones" className={isActive("/Sandstones") ? styles.active : ""}>Sandstones</Link>
+                <Link href="/mining" className={isActive("/mining") ? styles.active : ""}>Mining</Link>
+                <Link href="/quarry" className={isActive("/quarry") ? styles.active : ""}>Quarry</Link>
+                <Link href="/construction" className={isActive("/construction") ? styles.active : ""}>Construction</Link>
+                <Link href="/excavation" className={isActive("/excavation") ? styles.active : ""}>Excavation</Link>
+                <Link href="/sandstones" className={isActive("/sandstones") ? styles.active : ""}>Sandstones</Link>
               </div>
             </div>
 

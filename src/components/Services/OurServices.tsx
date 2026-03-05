@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./ServicesSection.module.css";
+import styles from "./OurServices.module.css";
 
-interface Service {
+interface Services {
   title: string;
   description: string;
   image: string;
 }
 
-const services: Service[] = [
-    {
+const services: Services[] = [
+  {
     title: "Mining",
     description:
       "Nigeria boasts a wealth of mineral resources, but its mining industry contributes a relatively small portion to the overall economy.",
@@ -28,9 +28,27 @@ const services: Service[] = [
       "Excavation is more than just removing dirt. It's the essential first step in many construction projects.",
     image: "/images/services-3.jpg",
   },
+  {
+    title: "Sandstones",
+    description:
+      "We extract and supply high-quality sandstone for construction, landscaping, and architectural applications, ensuring durability, strength, and aesthetic appeal for various projects.",
+    image: "/images/services-4.jpg",
+  },
+  {
+    title: "Equipment Leasing",
+    description:
+      "Our fleet of heavy-duty machinery is available for short and long-term leasing at competitive rates.",
+    image: "/images/services-5.jpg",
+  },
+  {
+    title: "Material Supply",
+    description:
+      "We supply high-quality construction materials including sand, granite, and reinforced concrete products.",
+    image: "/images/services-6.jpg",
+  },
 ];
 
-export default function ServicesSection() {
+export default function OurServices() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
