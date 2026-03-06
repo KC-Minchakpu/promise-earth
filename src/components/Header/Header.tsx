@@ -147,8 +147,8 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/projects" className={isActive("/projects") ? styles.active : ""}>Projects</Link>
-            <Link href="/contact" className={isActive("/contact") ? styles.active : ""}>Contact</Link>
+            <Link href="/Projects" className={isActive("/Projects") ? styles.active : ""}>Projects</Link>
+            <Link href="/Contact" className={isActive("/Contact") ? styles.active : ""}>Contact</Link>
           </nav>
 
           <div className={styles.mobileToggle} onClick={() => setMobileOpen(!mobileOpen)}>

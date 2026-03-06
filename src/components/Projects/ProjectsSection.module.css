@@ -1,0 +1,57 @@
+.projectsSection {
+  background-color: #031f35;
+  padding: 80px 6%;
+}
+
+/* grid layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* project card */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* image container */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+/* project image */
+.image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* hover zoom */
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* text section */
+.textContent {
+  margin-top: 18px;
+}
+
+/* category label */
+.category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #27c1d6;
+  font-weight: 600;
+}
+
+/* title */
+.title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
